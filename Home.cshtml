@@ -3,19 +3,51 @@
     Page.Title = "Home";
 }
 
+<style>
+    .project-image {
+        width: 200px;
+        height: 200px;
+    }
+        .project-image:link {
+            opacity: 1;
+        }
+
+    /* visited link */
+        .project-image:visited {
+            opacity: .8;
+        }
+
+    /* mouse over link */
+        .project-image:hover {
+            opacity: .8;
+        }
+
+    /* selected link */
+    .project-image:active {
+        opacity:.8;
+    }
+    
+    @@media screen and (max-width: 605px){
+        .project-image{
+            width:128px;
+            height:128px;
+        }
+    }
+</style>
+
 <div class="container-fluid m-0 p-0">
         <ul class="nav nav-pills nav-fill" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Projects</a>
+                <a class="nav-link" id="pills-projects-tab" data-toggle="pill" href="#pills-projects" role="tab" aria-controls="pills-projects" aria-selected="false">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Resume</a>
+                <a class="nav-link" id="pills-resume-tab" data-toggle="pill" href="#pills-resume" role="tab" aria-controls="pills-resume" aria-selected="false">Resume</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">About</a>
+                <a class="nav-link" id="pills-about-tab" data-toggle="pill" href="#pills-about" role="tab" aria-controls="pills-about" aria-selected="false">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
@@ -38,8 +70,88 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+            <div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row m-0 p-0">
+                    <div class="col-md-12 m-0 p-0">
+                        <div class="w3-display-container">
+                            <img src="~/Images/tech-bg.jpeg" class="img-fluid" style="opacity:.9;width:100vw;height:100vh" />
+                            <div class="w3-display-middle w3-large text-center bg-white">
+                                <h2 class="text-center text-dark">Some of my projects</h2>
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="bottom" title="HeRO" 
+                                                   data-content="The Classroom Technology Help Resources Online (HeRO) app organizes and presents all the information and self-help resources for using technology in classrooms and labs in one place so it is easier to find. 
+                                                   The app also enables OTS to send announcements about classroom and lab spaces, e.g. a repair update, an outage, information on new technologies, etc.">
+                                                  <img src="~/Images/hero.png" class="project-image" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="bottom" title="Promise To Sort" 
+                                                   data-content="Promise to Sort is a REST API that gives JavaScript Developers the ability to perform asynchronous sorting operations in their applications.">
+                                                   <img src="~/Images/PromiseToSortBG.jpeg" class="project-image" />
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="bottom" title="Wiphy" data-content="Add some fun to your daily weather reports"><img src="~/Images/Wiphy-Logo1.png" class="project-image"/></a></td>
+                                            <td>
+                                                <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="bottom" title="justsear.ch" 
+                                                   data-content="Save time with your searched. Search using justsear.ch, designed to give you specific results and filters out the junk. Compare your searches across multiple sites, giving you a variet of options and a result that is tailored to exactly what you want.">
+                                                    <img src="~/Images/justsearch.png" class="project-image" />
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="bottom" title="Location Tracker" 
+                                                   data-content="The Location Tracker is 1 of 4 apps in the BlockerTech Tracker Series. Location Tracker gives you and your peers the ability to track each others location with a click of a button. Every 3 minutes, you will receive updated information on the whereabouts of your peers.">
+                                                    <img src="~/Images/LocationTrackerLogo.jpg" class="project-image" />
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="bottom" title="Message Tracker" 
+                                                   data-content="The Message Tracker is 1 of 4 apps in the BlockerTech Tracker Series. Message Tracker gives you and your peers the ability to track each other's messages with a click of a button. Every message that your peer receives will be viewable through the Message Tracker app.">
+                                                    <img src="~/Images/MessageTrackerLogo.jpg" class="project-image" />
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-resume" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+            <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="row m-0 p-0">
+                    <div class="col-md-12 m-0 p-0">
+                        <div class="w3-display-container">
+                            <img src="~/Images/losangeles.jpeg" class="img-fluid" style="opacity:.9;width:100vw;height:100vh" />
+                            <div class="w3-display-middle w3-large text-center bg-white p-4">
+                                <h2 style="text-decoration:underline">Contact Me</h2>
+                                <address>
+                                    William Blocker <br />
+                                    Personal Email <a href="mailto:blocker.william3@gmail.com">blocker.william3@gmail.com</a><br>
+                                    For Projects: <a href="mailto:blocker.william3@gmail.com">wmblocker@blockertech.com</a><br>
+                                    Mobile: 202-262-6559                           
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+    });
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+    })
+</script>
