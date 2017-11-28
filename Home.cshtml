@@ -33,6 +33,11 @@
             height:128px;
         }
     }
+    @@media screen and (max-width: 565px) {
+        #elon {
+            visibility:hidden;
+        }
+    }
 </style>
 
 <div class="container-fluid m-0 p-0">
@@ -46,9 +51,9 @@
             <li class="nav-item">
                 <a class="nav-link" id="pills-resume-tab" data-toggle="pill" href="#pills-resume" role="tab" aria-controls="pills-resume" aria-selected="false">Resume</a>
             </li>
-            <li class="nav-item">
+            @*<li class="nav-item">
                 <a class="nav-link" id="pills-about-tab" data-toggle="pill" href="#pills-about" role="tab" aria-controls="pills-about" aria-selected="false">About</a>
-            </li>
+            </li>*@
             <li class="nav-item">
                 <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
             </li>
@@ -63,8 +68,7 @@
                             <div class="w3-display-middle w3-large text-center">
                                 <h1 class="text-center text-white" style="font-family:'Pacifico', cursive">William Blocker</h1>
                                 <h3 class="text-center text-white mb-5">Software Engineer | Student | Web Developer | Artist </h3>
-                                <img class="rounded mx-auto d-block mb-4" style="height:30%;width:30%;" src="~/Images/WilliamHeadShot.png" />
-                                <button class="btn btn-primary">Learn More</button>
+                                <img class="rounded mx-auto d-block mb-4" style="height:40%;width:40%;" src="~/Images/WilliamHeadShot.png" />
                             </div>
                         </div>
                     </div>
@@ -75,9 +79,9 @@
                     <div class="col-md-12 m-0 p-0">
                         <div class="w3-display-container">
                             <img src="~/Images/tech-bg.jpeg" class="img-fluid" style="opacity:.9;width:100vw;height:100vh" />
-                            <div class="w3-display-middle w3-large text-center bg-white">
+                            <div class="w3-display-middle w3-large text-center bg-white ">
                                 <h2 class="text-center text-dark">Some of my projects</h2>
-                                <table class="table">
+                                <table class="table p-5">
                                     <tbody>
                                         <tr>
                                             <td>
@@ -124,20 +128,23 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-resume" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="tab-pane fade bg-dark" id="pills-resume" role="tabpanel" aria-labelledby="pills-contact-tab">
                 <div class="row m-0 p-0">
                     <div class="col-md-12 m-0 p-0">
                         <div class="w3-display-container">
-                            <img src="~/Images/elonmusk.jpg" class="img-fluid" style="opacity:.9;width:100vw;height:100vh" />
+                            <img id="elon" src="~/Images/elonmusk.jpg" class="img-fluid" style="opacity:.9;width:100vw;height:100vh" />
+                            <div class="w3-display-topleft w3-large">
+                                <p class=" p-3 text-white">"When something is important enough, <br />you do it even if the odds are not in your favor." - Elon Musk</p>
+                            </div>
                             <div class="w3-display-middle w3-large text-center">
                                 <h1 class="text-center text-white">Resume</h1>
-                                <a class="btn btn-primary" href="~/Resume.pdf">Click Here to view</a>
+                                <a class="btn btn-primary" href="~/Resume.pdf">Click here to view</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+            @*<div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>*@
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
                 <div class="row m-0 p-0">
                     <div class="col-md-12 m-0 p-0">
@@ -149,7 +156,6 @@
                                     William Blocker <br />
                                     Personal Email: <a href="mailto:blocker.william3@gmail.com">blocker.william3@gmail.com</a><br>
                                     For Projects: <a href="mailto:blocker.william3@gmail.com">wmblocker@blockertech.com</a><br>
-                                    Mobile: 202-262-6559                           
                                 </address>
                             </div>
                         </div>
