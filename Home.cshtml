@@ -4,40 +4,10 @@
 }
 
 <style>
-    .project-image {
-        width: 200px;
-        height: 200px;
+    .tab-content{
+        width:100%;
     }
-        .project-image:link {
-            opacity: 1;
-        }
 
-    /* visited link */
-        .project-image:visited {
-            opacity: .8;
-        }
-
-    /* mouse over link */
-        .project-image:hover {
-            opacity: .8;
-        }
-
-    /* selected link */
-    .project-image:active {
-        opacity:.8;
-    }
-    
-    @@media screen and (max-width: 605px){
-        .project-image{
-            width:128px;
-            height:128px;
-        }
-    }
-    @@media screen and (max-width: 565px) {
-        #elon {
-            visibility:hidden;
-        }
-    }
 </style>
 
 <div class="container-fluid m-0 p-0">
@@ -75,55 +45,60 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-projects" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="row m-0 p-0">
-                    <div class="col-md-12 m-0 p-0">
-                        <div class="w3-display-container">
-                            <img src="~/Images/tech-bg.jpeg" class="img-fluid" style="opacity:.9;width:100vw;height:100vh" />
-                            <div class="w3-display-middle w3-large text-center bg-white ">
-                                <h2 class="text-center text-dark">Some of my projects</h2>
-                                <table class="table p-5">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <a href="https://inside.towson.edu/tu-software/" tabindex="0" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="bottom" title="HeRO" 
-                                                   data-content="The Classroom Technology Help Resources Online (HeRO) app organizes and presents all the information and self-help resources for using technology in classrooms and labs in one place so it is easier to find. 
-                                                   The app also enables OTS to send announcements about classroom and lab spaces, e.g. a repair update, an outage, information on new technologies, etc. Search the Towson Software inventory for the HeRO app!">
-                                                  <img src="~/Images/hero.png" class="project-image" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="http://http://promisetosort.blockertech.com/" tabindex="0" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="bottom" title="Promise To Sort" 
-                                                   data-content="Promise to Sort is a REST API that gives JavaScript Developers the ability to perform asynchronous sorting operations in their applications.">
-                                                   <img src="~/Images/PromiseToSortBG.jpeg" class="project-image" />
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#" tabindex="0" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="bottom" title="Wiphy" data-content="Add some fun to your daily weather reports"><img src="~/Images/Wiphy-Logo1.png" class="project-image"/></a></td>
-                                            <td>
-                                                <a href="https://github.com/wmblocker/Wiphy" tabindex="0" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="bottom" title="justsear.ch" 
-                                                   data-content="Save time with your searched. Search using justsear.ch, designed to give you specific results and filters out the junk. Compare your searches across multiple sites, giving you a variet of options and a result that is tailored to exactly what you want.">
-                                                    <img src="~/Images/justsearch.png" class="project-image" />
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="https://play.google.com/store/apps/details?id=net.blockertechlocationtracker.azurewebsites" tabindex="0" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="bottom" title="Location Tracker" 
-                                                   data-content="The Location Tracker is 1 of 4 apps in the BlockerTech Tracker Series. Location Tracker gives you and your peers the ability to track each others location with a click of a button. Every 3 minutes, you will receive updated information on the whereabouts of your peers.">
-                                                    <img src="~/Images/LocationTrackerLogo.jpg" class="project-image" />
-                                                </a>
-                                            </td>
-                                            <td>
-                                                <a href="https://play.google.com/store/apps/details?id=net.blockertechmessagetracker.azurewebsites" tabindex="0" data-toggle="popover" data-trigger="focus" data-container="body" data-placement="bottom" title="Message Tracker" 
-                                                   data-content="The Message Tracker is 1 of 4 apps in the BlockerTech Tracker Series. Message Tracker gives you and your peers the ability to track each other's messages with a click of a button. Every message that your peer receives will be viewable through the Message Tracker app.">
-                                                    <img src="~/Images/MessageTrackerLogo.jpg" class="project-image" />
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="~/Images/hero.png" class="img-fluid"/>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>HeRO</h3>
+                            <p class="p-5">The Classroom Technology Help Resources Online (HeRO) app organizes and presents all the information and self-help resources for using technology in classrooms and labs in one place so it is easier to find.
+                                                   The app also enables OTS to send announcements about classroom and lab spaces, e.g. a repair update, an outage, information on new technologies, etc. Search the Towson Software inventory for the HeRO app!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="p-5">Just Search</h3>
+                            <p class="p-5">Save time with your searched. Search using justsear.ch, designed to give you specific results and filters out the junk. Compare your searches across multiple sites, giving you a variet of options and a result that is tailored to exactly what you want.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="~/Images/justsearch.png" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="~/Images/LocationTrackerLogo.png" class="img-fluid" />
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="p-5">The Location Tracker</h3>
+                            <p class="p-5">The Location Tracker is 1 of 4 apps in the BlockerTech Tracker Series. Location Tracker gives you and your peers the ability to track each others location with a click of a button. Every 3 minutes, you will receive updated information on the whereabouts of your peers.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="p-5">Message Tracker</h3>
+                            <p class="p-5">The Message Tracker is 1 of 4 apps in the BlockerTech Tracker Series. Message Tracker gives you and your peers the ability to track each other's messages with a click of a button. Every message that your peer receives will be viewable through the Message Tracker app.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="~/Images/MessageTrackerLogo.png" class="img-fluid" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="~/Images/PromiseToSortBG.png" class="img-fluid" />
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="p-5">Promise to Sort</h3>
+                            <p class="p-5">Promise to Sort is a REST API that gives JavaScript Developers the ability to perform asynchronous sorting operations in their applications.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="p-5">Wiphy</h3>
+                            <p class="p-5">Promise to Sort is a REST API that gives JavaScript Developers the ability to perform asynchronous sorting operations in their applications</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="~/Images/Wiphy-Logo1.png" class="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -168,11 +143,3 @@
         </div>
     </div>
 </div>
-<script>
-    $(document).ready(function () {
-        $('[data-toggle="popover"]').popover();
-    });
-    $('.popover-dismiss').popover({
-        trigger: 'focus'
-    })
-</script>
